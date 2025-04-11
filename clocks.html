@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional: Include Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card img {
+            height: 300px; /* Fixed height for consistent image sizes */
+            object-fit: cover; /* Ensure images cover the space without distortion */
+            width: 100%; /* Ensure image takes up the entire width of the card */
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        /* Scroll Up Button Styling */
+        #scrollUpBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color:  #090909;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            display: none; /* Initially hidden */
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #scrollUpBtn:hover {
+            background-color:  #090909;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <a href="products.html" class="btn btn-outline-secondary text-center me-auto">
+            <i class="bi bi-arrow-left"></i>
+        </a>
+        <h2 class="text-center mb-4">Clock Collection</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock1.png" class="card-img-top" alt="Clock 1">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock2.png" class="card-img-top" alt="Clock 2">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock3.png" class="card-img-top" alt="Clock 3">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock4.png" class="card-img-top" alt="Clock 4">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock5.png" class="card-img-top" alt="Clock 5">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock6.png" class="card-img-top" alt="Clock 6">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock7.png" class="card-img-top" alt="Clock 7">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock8.png" class="card-img-top" alt="Clock 8">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock9.png" class="card-img-top" alt="Clock 9">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock10.png" class="card-img-top" alt="Clock 10">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock11.png" class="card-img-top" alt="Clock 11">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock12.png" class="card-img-top" alt="Clock 12">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock13.png" class="card-img-top" alt="Clock 13">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock14.png" class="card-img-top" alt="Clock 14">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock15.png" class="card-img-top" alt="Clock 15">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/CLOCKS/clock16.png" class="card-img-top" alt="Clock 16">
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <!-- Scroll Up Button -->
+    <button id="scrollUpBtn" title="Go to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Get the button
+        const scrollUpBtn = document.getElementById('scrollUpBtn');
+
+        // Show or hide the button based on scroll position
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollUpBtn.style.display = "block";
+            } else {
+                scrollUpBtn.style.display = "none";
+            }
+        };
+
+        // Scroll to the top when the button is clicked
+        scrollUpBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

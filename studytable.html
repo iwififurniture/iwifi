@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Table Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional: Include Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 200px; /* Fixed height for uniformity */
+            object-fit: cover; /* Ensures image fills the space properly */
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-body {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .card:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Elevate shadow on hover */
+        }
+        .card-img-top:hover {
+            filter: brightness(1.2); /* Brightens image on hover */
+        }
+        .card:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Elevate shadow on hover */
+        }
+
+        .card-img-top:hover {
+            filter: brightness(1.2); /* Brightens image on hover */
+             transition: filter 0.3s ease; /* Smooth transition for image effect */
+        }
+        .card-img-top {
+             width: 100%; /* Ensures full width */
+             height: auto; /* Adjusts height automatically to maintain aspect ratio */
+             max-height: 300px; /* Optional: Limits the maximum height for consistency */
+             object-fit: contain; /* Ensures the entire image is visible without cropping */
+        }
+
+        /* Scroll-to-top Button */
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none; /* Hidden by default */
+            background-color:  #090909;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color:  #090909;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <a href="products.html" class="btn btn-outline-secondary text-center me-auto">
+            <i class="bi bi-arrow-left"></i>
+        </a>
+        <h2 class="text-center mb-4">Study Table Collection</h2>
+        <div class="row g-4">
+            <script>
+                const images = [
+                    "WD-KST000-106-02.jpg",
+                    "6464aca9e8184752e2e8937e_1684319401109.jpg",
+                    "computer-table-desktop-desk-1.webp",
+                    "13862f6350e33a4978ff99edafa1b8c8.jpg",
+                    "data_study-table_nettle-study-table_revised_walnut_updated_new-logo_1-750x650.jpg",
+                    "data_study-tables-mdf_armada-study-table_exotic-teak-finish_new-images_3-750x650.jpg",
+                    "data_study-tables-mdf_stanis-study-table_updated_exotic-teak_updated_new_1-810x702.jpg",
+                    "image_9bdee59c-5b6c-4c7a-bf0e-f9de9ce22cf5.webp",
+                    "New-Design-Eco-Friendly-Customized-Ash-Wood-Study-Table.webp",
+                    "wooden-storage-study-table.webp",
+                    "wooden-computer-table-500x500.webp",
+                    "wooden-laptop-table-1.jpg",
+                    "33ff8d10-3208-40cd-961b-3b33546afc8f.__CR0,0,970,600_PT0_SX970_V1___.jpg",
+                    "wooden-study-table.jpg",
+                    "z2-2.jpg",
+                    "zyva-study-table-in-honey-oak-finish-by-woodsworth-zyva-study-table-in-honey-oak-finish-by-woodswort-y779zl.jpg"
+                ];
+
+                images.forEach((image, index) => {
+                    document.write(`
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card shadow-sm">
+                                <img src="images/STUDY TABLE/${image}" class="card-img-top" alt="Study Table ${index + 1}">
+                            </div>
+                        </div>
+                    `);
+                });
+            </script>
+        </div>
+        <br>
+    </div>
+
+    <!-- Scroll-to-top Button -->
+    <button id="scrollToTopBtn" title="Go to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scroll-to-top Button Script -->
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("scrollToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.onclick = function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        };
+    </script>
+</body>
+</html>

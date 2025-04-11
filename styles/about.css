@@ -1,0 +1,166 @@
+body {
+    color: black;
+  }
+  
+  .common-banner-section {
+    padding: 70px 0;
+    background: linear-gradient(to right, rgb(80, 80, 80), rgb(125, 117, 117));
+    color: white;
+  }
+  .common-banner-section .back-btn {
+    margin-bottom: 26px;
+  }
+  .back-btn {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .back-btn span {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 100%;
+    text-align: center;
+    padding: 4px 0;
+    margin-right: 10px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .common-banner-content .section-title {
+    margin-bottom: 12px;
+  }
+  .padding-bottom {
+    padding-bottom: 80px;
+  }
+  .padding-top {
+    padding-top: 80px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .section-title {
+    margin-bottom: 26px;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  .about-our-shop-section .row {
+    margin-top: 50px;
+  }
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+  .aboutpage-btm-sec .section-title {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutpage-btm-sec .about-us-box {
+    padding: 20px 15px;
+    border: 1px solid black;
+    position: relative;
+  }
+  .about-us-section .about-us-box img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .about-us-section .about-us-box h4 {
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+  .section-title h2 {
+    font-size: 41px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .section-title h3 {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+  .about-us-content p,
+  .common-banner-content p,
+  .section-title p,
+  .section-paragraph p {
+    font-size: 14px;
+    font-family: "Kanit", sans-serif;
+  }
+  .about-us-box p {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family: "Kanit", sans-serif;
+  }
+  .aboutpage-btm-sec .section-title p{
+    margin-top: 24px;
+  }
+
+  .abt-shp-column-right img {
+    width: 100%;
+  }
+  .col-12{
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  @media screen and (max-width: 767px){
+    .common-banner-section{
+      padding: 40px 0;
+    }
+    .common-banner-content .back-btn{
+      margin-bottom: 15px;
+    }
+    .section-title{
+      margin-bottom: 20px;
+    }
+    .aboutpage-btm-sec .section-title p{
+      margin-top: 15px;
+    }
+    .abt-shp-column-right, .about-our-shop-section .row{
+      margin-top: 30px;
+    }
+    .about-us-section .about-us-box {
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+  }
+  @media screen and (max-width: 991px){
+    .section-title{
+      margin-bottom: 20px;
+    }
+    .about-us-page{
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+    .padding-top{
+      padding-top: 40px;
+    }
+    .padding-bottom{
+      padding-bottom: 40px;
+    }
+    .section-title h2{
+      font-size: 26px;
+      font-weight: 600;
+    }
+    .section-title h3 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .about-us-section .about-us-box h4{
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
