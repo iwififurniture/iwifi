@@ -66,47 +66,105 @@
             background-color:  #090909;
         }
     </style>
-</head>
+</head> 
 <body class="bg-light">
+
+    <!-- Fullscreen Image Modal -->
+    <div id="wrapper" style="display:none; justify-content:center; align-items:center; position:fixed; top:0; left:0; width:100vw; height:100vh; background-color:rgba(0,0,0,0.8); z-index:9999;">
+        <span style="position:absolute; top:20px; right:30px; font-size:40px; color:white; cursor:pointer;">&times;</span>
+        <img id="fullImg" src="" style="max-width:90%; max-height:90%; border-radius:8px; box-shadow:0 0 20px rgba(255,255,255,0.3);" />
+    </div>
+
     <div class="container py-5">
         <a href="products.html" class="btn btn-outline-secondary text-center me-auto">
             <i class="bi bi-arrow-left"></i>
         </a>
         <h2 class="text-center mb-4">Study Table Collection</h2>
         <div class="row g-4">
-            <script>
-                const images = [
-                    "WD-KST000-106-02.jpg",
-                    "6464aca9e8184752e2e8937e_1684319401109.jpg",
-                    "computer-table-desktop-desk-1.webp",
-                    "13862f6350e33a4978ff99edafa1b8c8.jpg",
-                    "data_study-table_nettle-study-table_revised_walnut_updated_new-logo_1-750x650.jpg",
-                    "data_study-tables-mdf_armada-study-table_exotic-teak-finish_new-images_3-750x650.jpg",
-                    "data_study-tables-mdf_stanis-study-table_updated_exotic-teak_updated_new_1-810x702.jpg",
-                    "image_9bdee59c-5b6c-4c7a-bf0e-f9de9ce22cf5.webp",
-                    "New-Design-Eco-Friendly-Customized-Ash-Wood-Study-Table.webp",
-                    "wooden-storage-study-table.webp",
-                    "wooden-computer-table-500x500.webp",
-                    "wooden-laptop-table-1.jpg",
-                    "33ff8d10-3208-40cd-961b-3b33546afc8f.__CR0,0,970,600_PT0_SX970_V1___.jpg",
-                    "wooden-study-table.jpg",
-                    "z2-2.jpg",
-                    "zyva-study-table-in-honey-oak-finish-by-woodsworth-zyva-study-table-in-honey-oak-finish-by-woodswort-y779zl.jpg"
-                ];
-
-                images.forEach((image, index) => {
-                    document.write(`
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card shadow-sm">
-                                <img src="images/STUDY TABLE/${image}" class="card-img-top" alt="Study Table ${index + 1}">
-                            </div>
-                        </div>
-                    `);
-                });
-            </script>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/WD-KST000-106-02.jpg" class="card-img-top" alt="Study Table 1">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/6464aca9e8184752e2e8937e_1684319401109.jpg" class="card-img-top" alt="Study Table 2">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/computer-table-desktop-desk-1.webp" class="card-img-top" alt="Study Table 3">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/13862f6350e33a4978ff99edafa1b8c8.jpg" class="card-img-top" alt="Study Table 4">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/data_study-table_nettle-study-table_revised_walnut_updated_new-logo_1-750x650.jpg" class="card-img-top" alt="Study Table 5">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/data_study-tables-mdf_armada-study-table_exotic-teak-finish_new-images_3-750x650.jpg" class="card-img-top" alt="Study Table 6">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/data_study-tables-mdf_stanis-study-table_updated_exotic-teak_updated_new_1-810x702.jpg" class="card-img-top" alt="Study Table 7">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/image_9bdee59c-5b6c-4c7a-bf0e-f9de9ce22cf5.webp" class="card-img-top" alt="Study Table 8">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/New-Design-Eco-Friendly-Customized-Ash-Wood-Study-Table.webp" class="card-img-top" alt="Study Table 9">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/wooden-storage-study-table.webp" class="card-img-top" alt="Study Table 10">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/wooden-computer-table-500x500.webp" class="card-img-top" alt="Study Table 11">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/wooden-laptop-table-1.jpg" class="card-img-top" alt="Study Table 12">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/33ff8d10-3208-40cd-961b-3b33546afc8f.__CR0,0,970,600_PT0_SX970_V1___.jpg" class="card-img-top" alt="Study Table 13">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/wooden-study-table.jpg" class="card-img-top" alt="Study Table 14">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/z2-2.jpg" class="card-img-top" alt="Study Table 15">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm">
+                    <img src="images/STUDY TABLE/zyva-study-table-in-honey-oak-finish-by-woodsworth-zyva-study-table-in-honey-oak-finish-by-woodswort-y779zl.jpg" class="card-img-top" alt="Study Table 16">
+                </div>
+            </div>
         </div>
         <br>
     </div>
+    
 
     <!-- Scroll-to-top Button -->
     <button id="scrollToTopBtn" title="Go to top">
@@ -115,26 +173,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Scroll-to-top Button Script -->
-    <script>
-        // Get the button
-        let mybutton = document.getElementById("scrollToTopBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        };
-
-        // When the user clicks on the button, scroll to the top of the document
-        mybutton.onclick = function() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-        };
-    </script>
+    <script src="js/topScroll1.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
