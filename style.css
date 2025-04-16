@@ -73,6 +73,7 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
 }
 
+
 /* Product item styles */
 .product-item {
   background-color: #fff; /* White background for product items */
@@ -116,7 +117,6 @@ body {
 
 /* video section */
 
-  
   .hero {
     width: 100%;
     height: 100vh;
@@ -135,19 +135,33 @@ body {
 
   .content h1 {
     font-size: 160px;
-    color: #bc9531;
     font-weight: 600;
+    color: #8d7e40; /* Set base yellow color */
+    text-shadow: 
+      1px 1px 2px white, 
+      0 0 25px yellow, 
+      0 0 5px yellow; /* Add white and yellow shadows for a gradient-like effect */
     transition: 0.5s;
   }
+  
+  /* .content h1 {
+    font-size: 160px;
+    color: #cab47c;
+    font-weight: 600;
+    transition: 0.5s;
+  }  */
 
   .content h1:hover {
     -webkit-text-stroke: 2px white;
     color: transparent;
   }
 
-  .content h6{
+  .content h6 {
     font-size: 35px;
-    color: #c48d00;
+    background: linear-gradient(45deg, #fff, #ffcc00); /* White to Yellow gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Ensure only the gradient appears */
   }
 
 .content .btn{
